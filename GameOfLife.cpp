@@ -24,7 +24,7 @@ void Display(vector<vector<char>> world);
 
 int main()
 {
-	vector<vector<char>> world;
+    vector<vector<char>> world;
     vector<char> top;
     vector<char> bot;
 
