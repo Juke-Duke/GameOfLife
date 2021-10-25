@@ -4,18 +4,18 @@
 #include <string>
 using namespace std;
 
-//Check a cell and all bordering cells
-//If its >1 && <=3, then it lives
-//If an empty cell has EXACTLY 3 neighbors, it comes to life
+// Check a cell and all bordering cells
+// If its >1 && <=3, then it lives
+// If an empty cell has EXACTLY 3 neighbors, it comes to life
 
-//Surrounding Cells:
-//Cells: Up to 8
-//Border: Up to 5 -> Border Cells: (0,1-7) (1-19,0) (20,1-7) (1-19,8)
-//Corner: Up to 3 -> Corner Cells: (0,0) (0,8) (20,0) (20,8)
+// Surrounding Cells:
+// Cells: Up to 8
+// Border: Up to 5 -> Border Cells: (0,1-7) (1-19,0) (20,1-7) (1-19,8)
+// Corner: Up to 3 -> Corner Cells: (0,0) (0,8) (20,0) (20,8)
 
-//Ex. (3,1) -> (2,0) (3,0) (4,0)         (1,0) -> (0,0) (1,0) (2,0)
-//			   (2,1) (3,1) (4,1)                  (0,1) (1,1) (2,1)
-//             (2,2) (3,2) (4,2)
+// Ex. (3,1) -> (2,0) (3,0) (4,0)         (1,0) -> (0,0) (1,0) (2,0)
+//	        (2,1) (3,1) (4,1)                  (0,1) (1,1) (2,1)
+//              (2,2) (3,2) (4,2)
 
 vector<vector<char>> NextGeneration(vector<vector<char>> world);
 int Surrounding(vector<vector<char>> world, int row, int col);
